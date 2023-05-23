@@ -1,5 +1,3 @@
-'use client'
-
 import { useOcrStore } from '@/store/ocrStore'
 
 export function Loading () {
