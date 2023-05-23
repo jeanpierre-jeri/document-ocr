@@ -79,7 +79,7 @@ export function Dropzone () {
       </div>
 
       <div className='flex items-center flex-col mt-5'>
-        <label htmlFor='language' className='block text-sm font-medium text-gray-900 dark:text-white'>Select a language</label>
+        <label htmlFor='language' className='block text-sm font-medium text-gray-900 dark:text-white'>Select document language</label>
         <select onChange={handleSelectChange} id='counlanguagetries' className='bg-[#1f2123] text-white text-sm rounded-lg block p-2.5 w-fit mt-2 mb-5' defaultValue=''>
           <option value='' disabled>Choose a language</option>
           <option value='eng'>English</option>
