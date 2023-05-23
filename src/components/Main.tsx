@@ -18,7 +18,7 @@ export function Main () {
   if (status === '' && result === '') {
     return (
       <>
-        <h1 className='text-center text-[#bcbcbc] text-lg tracking-tight'>Upload your image</h1>
+        <h1 className='text-center text-[#bcbcbc] text-lg tracking-tight'>Easily translate photo documents into text</h1>
         <p className='text-[#858585] text-xs tracking-tight mt-4 text-center'>File should be Jpeg, Png or Webp.</p>
 
         <Dropzone />
