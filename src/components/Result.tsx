@@ -28,11 +28,10 @@ export function Result () {
 
   return (
     <div>
-      <div className='w-9 aspect-square rounded-full bg-[#219653] flex justify-center items-center relative mx-auto'>
+      <div className='w-9 aspect-square rounded-full bg-[#219653] flex justify-center items-center relative mx-auto mb-6'>
         <DoneIcon className='text-white absolute w-6' />
       </div>
 
-      <h2 className='text-center text-[#bcbcbc] text-lg tracking-tight mb-6 mt-3'>Done.</h2>
       <textarea className='text-white text-base w-full aspect-[1/1.2] bg-[#1f1f20] resize-none scrollbar-track-[#3f3f3f] scrollbar-thumb-[#2f80ed] scrollbar-thin scrollbar-thumb-rounded-lg p-2' defaultValue={result} />
 
       <div className='grid grid-cols-12 mt-5 rounded-lg overflow-hidden w-full'>
