@@ -28,8 +28,12 @@ export function Result () {
   }
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(result)
-    toast.success('Copied to clipboard!')
+    try {
+      await navigator.clipboard.writeText(result)
+      toast.success('Copied to clipboard!')
+    } catch (error) {
+      toast.error('Failed to copy to clipboard')
+    }
   }
 
   return (
