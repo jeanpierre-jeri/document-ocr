@@ -44,7 +44,7 @@ export function Result () {
 
       <div className='relative'>
         <textarea className='text-white text-base w-full aspect-[1/1.2] bg-[#1f1f20] resize-none scrollbar-track-[#3f3f3f] scrollbar-thumb-[#2f80ed] scrollbar-thin scrollbar-thumb-rounded-lg p-2' defaultValue={result} />
-        <button onClick={handleCopy} type='button' className='absolute bottom-4 right-4 bg-black/70 rounded-lg p-2'>
+        <button onClick={handleCopy} type='button' className='absolute bottom-4 right-4 bg-black/90 hover:bg-black transition-colors rounded-lg p-2'>
           <i className='relative flex items-center justify-center text-white w-6 aspect-square'>
             <CopyIcon className='absolute w-full' />
           </i>
