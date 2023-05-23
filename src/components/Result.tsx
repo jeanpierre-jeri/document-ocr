@@ -53,7 +53,7 @@ export function Result () {
 
       <div className='grid grid-cols-12 mt-5 rounded-lg overflow-hidden w-full'>
         <input type='text' placeholder='Your document name' className='block col-span-9 h-fit items-center px-4 py-3 outline-none w-full bg-[#3b3b3b] text-white' value={name} onInput={(e) => setName(e.currentTarget.value)} />
-        <a download={name !== '' ? name : filename} href={textFile} className='bg-[#2F80ED] hover:bg-[#146DE1] transition-colors px-4 py-3 text-white text-sm tracking-tight mx-auto flex items-center justify-center text-center col-span-3 w-full outline-none'>
+        <a download={name !== '' ? name : filename} href={textFile} className='bg-[#2f81ed] hover:bg-[#0e5ec7] transition-colors px-4 py-3 text-white text-sm tracking-tight mx-auto flex items-center justify-center text-center col-span-3 w-full outline-none'>
           Download
         </a>
       </div>

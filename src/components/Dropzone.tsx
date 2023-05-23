@@ -86,8 +86,8 @@ export function Dropzone () {
           <option value='spa'>Spanish</option>
         </select>
 
-        <button onClick={handleClick} type='button' className='bg-[#2F80ED] hover:bg-[#146DE1] transition-colors rounded-lg px-4 py-3 text-white text-xs tracking-tight mx-auto block text-center '>
-          {image === '' ? 'Choose a file' : 'Start'}
+        <button onClick={handleClick} type='button' className={`bg-[#2F80ED] hover:bg-[#0e5ec7] transition-colors rounded-lg px-4 py-3 text-white ${image === '' ? 'text-xs' : 'text-sm'} mx-auto block text-center`}>
+          {image === '' ? 'Choose a file' : 'Start now'}
         </button>
       </div>
 
