@@ -42,7 +42,7 @@ export function Dropzone () {
 
     const worker = await createWorker({
       logger: m => {
-        setStatus('Loading...')
+        setStatus('Recognizing text...')
         setProgress(m.progress)
       }
     })
