@@ -4,6 +4,7 @@ import { ImagePlaceholder } from './ImagePlaceholder'
 import { createWorker } from 'tesseract.js'
 import { useOcrStore } from '@/store/ocrStore'
 import { toast } from 'sonner'
+import confetti from 'canvas-confetti'
 
 export function Dropzone () {
   const [image, setImage] = useState('')
@@ -55,7 +56,8 @@ export function Dropzone () {
 
     setResult(data.data.text)
     toast.success('Done!')
-    await worker.terminate()
+    void confetti()
+    void worker.terminate()
   }
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -75,8 +77,6 @@ export function Dropzone () {
         <input {...getInputProps()} />
         <ImagePlaceholder image={image} isDragActive={isDragActive} />
       </div>
-
-      <p className='text-xs text-[#BDBDBD] tracking-tight text-center mt-4'>Or</p>
 
       <div className='flex items-center flex-col mt-5'>
         <label htmlFor='language' className='block text-sm font-medium text-gray-900 dark:text-white'>Select a language</label>

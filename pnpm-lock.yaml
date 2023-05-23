@@ -13,6 +13,9 @@ dependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.23)
+  canvas-confetti:
+    specifier: 1.6.0
+    version: 1.6.0
   encoding:
     specifier: 0.1.13
     version: 0.1.13
@@ -54,6 +57,9 @@ dependencies:
     version: 4.3.8(react@18.2.0)
 
 devDependencies:
+  '@types/canvas-confetti':
+    specifier: 1.6.0
+    version: 1.6.0
   tailwind-scrollbar:
     specifier: 3.0.4
     version: 3.0.4(tailwindcss@3.3.2)
@@ -281,6 +287,10 @@ packages:
     dependencies:
       tslib: 2.5.2
     dev: false
+
+  /@types/canvas-confetti@1.6.0:
+    resolution: {integrity: sha512-Yq6rIccwcco0TLD5SMUrIM7Fk7Fe/C0jmNRxJJCLtAF6gebDkPuUjK5EHedxecm69Pi/aA+It39Ux4OHmFhjRw==}
+    dev: true
 
   /@types/json-schema@7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
@@ -662,6 +672,10 @@ packages:
 
   /caniuse-lite@1.0.30001488:
     resolution: {integrity: sha512-NORIQuuL4xGpIy6iCCQGN4iFjlBXtfKWIenlUuyZJumLRIindLb7wXM+GO8erEhb7vXfcnf4BAg2PrSDN5TNLQ==}
+    dev: false
+
+  /canvas-confetti@1.6.0:
+    resolution: {integrity: sha512-ej+w/m8Jzpv9Z7W7uJZer14Ke8P2ogsjg4ZMGIuq4iqUOqY2Jq8BNW42iGmNfRwREaaEfFIczLuZZiEVSYNHAA==}
     dev: false
 
   /chalk@4.1.2:
